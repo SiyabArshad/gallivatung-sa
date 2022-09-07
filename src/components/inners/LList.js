@@ -47,8 +47,7 @@ export default function LList(props){
                     {
                         null != price && price !== '' && 
                         <TouchableOpacity onPress={()=>  NavigationService.navigate( 'Comments' )} style={styles.priceWrap}>
-                            <TextRegular style={[styles.priceTitle,{color: colors.addressText,}]}>{translate('home','from')}</TextRegular>
-                            <TextBold style={[styles.priceAmount,{color:"#0B5C19",}]}>{fomartCurrOut(price)}</TextBold>
+                            <TextBold style={[styles.priceAmount,{color:"#0B5C19",}]}>Write a Review</TextBold>
                         </TouchableOpacity>
                     }
                     
